@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bungee Spice", sans-serif;
+}
+
+.main-header {
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(to right, rgb(194, 52, 16), rgb(224, 185, 11));
+  height: 6rem;
+  /*aligning the text in the center both vertically and horizontally using flexbox*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 6px #555;
+}
+
+.main-header h1 {
+  /* -webkit-text-stroke: 10px black; */
+  /*used the text-shadow property so that the text is readable since the background and text color is nearly the same*/
+  text-shadow: black 2px 0px 3px;
+}
+
+.operations {
+  border: 2px solid rgba(194, 52, 16, 0.8);
+  margin-top: 2rem;
+  width: 65%;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+
+.operations [type="text"] {
+  border: 2px solid rgba(194, 52, 16, 0.8);
+  outline: none; /*to remove the default outline of the input box*/
+  border-radius: 0.3rem;
+}
